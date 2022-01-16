@@ -5,10 +5,61 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DRIVEN DRIZZLE</title>
+    <title>DRIVEN DRIZZLE | Lynn Zhang</title>
     <link rel="shortcut icon" href="../image/icon/favicon.jpg">
 
     <style>
+        #background0 {
+            width: 100%;
+            height: 0;
+            padding: 0;
+            padding-bottom: 50%;
+            background: url('./image/page1/a.png') repeat;
+            position: relative;
+        }
+
+        #font_a {
+            position: absolute;
+            left: 15%;
+            top: 14.5vw;
+            font-size: 2.4vw;
+            font-family: Helvetica Neue;
+            font-weight: 600;
+            color: #C6D0E6;
+        }
+
+        #font_b {
+            position: absolute;
+            left: 15.15%;
+            top: 17.5vw;
+            font-size: 1.4vw;
+            font-family: Helvetica Neue;
+            font-weight: 350;
+            text-align: justify;
+            width: 20vw;
+            color: #C6D0E6;
+        }
+
+        #font_c {
+            position: absolute;
+            left: 15.15%;
+            top: 24vw;
+            font-size: 1.4vw;
+            font-family: Helvetica Neue;
+            font-weight: 350;
+            color: #C6D0E6;
+        }
+
+        #font_d {
+            position: absolute;
+            left: 15.15%;
+            top: 26vw;
+            font-size: 1.4vw;
+            font-family: Helvetica Neue;
+            font-weight: 350;
+            color: #C6D0E6;
+        }
+
         #background1 {
             width: 100%;
             height: 0;
@@ -375,9 +426,20 @@
 </head>
 
 <body style="margin: 0;">
-    <div id="background1">
+    <div id="background0">
         <div id="page0" class="page"></div>
-        <div id="page1" class="page" style="position: absolute;top:46.97979797vw;"></div>
+        <div id="back" style="top:0;">
+            <img src="./image/main.png" style="width:100%">
+        </div>
+        <div id="font_a">Driven Drizzle</div>
+        <div id="font_b">A Visual Interactive Design to Inspire Thinking about Entropy Reduction</div>
+        <div id="font_c">Individual Project</div>
+        <div id="font_d">2021.12</div>
+    </div>
+
+    <div id="background1">
+        <div id="page1" class="page"></div>
+        <div id="page2" class="page" style="position: absolute;top:46.97979797vw;"></div>
         <div id="block" style="top:49vw"></div>
         <div id="font" style="top:48.67979797vw">INSPIRATION</div>
         <div id="a3">
@@ -409,7 +471,7 @@
     </div>
 
     <div id="background2">
-        <div id="page2" class="page"></div>
+        <div id="page3" class="page"></div>
         <div id="a11">
             <img src="./image/page1/a11.png" style="width:100vw">
         </div>
@@ -433,7 +495,7 @@
     </div>
 
     <div id="background3">
-        <div id="page3" class="page"></div>
+        <div id="page4" class="page"></div>
         <div id="b1">
             <img src="./image/page2/b1.png" style="width:45vw">
         </div>
@@ -460,8 +522,8 @@
     </div>
 
     <div id="background4">
-        <div id="page4" class="page"></div>
-        <div id="page5" class="page" style="position: absolute;top:30.3vw;"></div>
+        <div id="page5" class="page"></div>
+        <div id="page6" class="page" style="position: absolute;top:30.3vw;"></div>
         <div id="block"></div>
         <div id="font">IDEATION</div>
         <div id="font11">
@@ -478,7 +540,7 @@
     </div>
 
     <div id="background5">
-        <div id="page6" class="page"></div>
+        <div id="page7" class="page"></div>
         <div id="block"></div>
         <div id="font">USER INTERACTION</div>
         <div id="font11" style="left:15vw;top:7.5vw;width:33vw">
@@ -516,7 +578,7 @@
     </div>
 
     <div id="background6">
-        <div id="page7" class="page"></div>
+        <div id="page8" class="page"></div>
         <div id="font11" style="left:15vw;top:7.5vw;width:33vw">
             <p style="display: inline;font-weight: 600;font-family:HelveticaNeue-Bold;">DEVICE TESTING : </p>
             <p style="line-height:60%;">Adjust the angle of the projector & Kinect.</p>
@@ -555,8 +617,8 @@
     </div>
 
     <div id="background7">
-        <div id="page8" class="page"></div>
-        <div id="page9" class="page" style="position: absolute;top:49.3vw;"></div>
+        <div id="page9" class="page"></div>
+        <div id="page10" class="page" style="position: absolute;top:49.3vw;"></div>
         <div id="z1">
             <img src="./image/page4/z1.png" style="width:100vw">
         </div>
@@ -593,6 +655,7 @@
         <li id="pageUlLi7" class="pageUlLi" style="color: #d8d8d8">&nbsp;</li>
         <li id="pageUlLi8" class="pageUlLi" style="color: #d8d8d8">&nbsp;</li>
         <li id="pageUlLi9" class="pageUlLi" style="color: #d8d8d8">&nbsp;</li>
+        <li id="pageUlLi10" class="pageUlLi" style="color: #d8d8d8">&nbsp;</li>
     </ul>
 
     <script src="https://libs.baidu.com/jquery/1.11.3/jquery.min.js"></script>
@@ -607,7 +670,7 @@
         function resizeImages() {
             $(function (e) {
                 var screenHeight = document.documentElement.clientHeight;
-                $("#pageUl").css("bottom", screenHeight / 2);
+                $("#pageUl").css("bottom", screenHeight / 8);
 
                 var obj = document.getElementsByClassName("page");
                 dis = [0];
@@ -639,8 +702,10 @@
                     var temp = 7;
                 } else if (height < dis[9] - 1) {
                     var temp = 8;
-                } else {
+                } else if (height < dis[10] - 1) {
                     var temp = 9;
+                } else {
+                    var temp = 10;
                 }
                 for (var i = 0; i <= temp; ++i) {
                     $("#pageUlLi" + i).css("color", "#FFF48F");
@@ -686,6 +751,9 @@
         }
         document.getElementById("pageUlLi9").onmousedown = function () {
             toPage(9);
+        }
+        document.getElementById("pageUlLi10").onmousedown = function () {
+            toPage(10);
         }
     </script>
 
